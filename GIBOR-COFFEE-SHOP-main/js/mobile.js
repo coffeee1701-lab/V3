@@ -106,6 +106,7 @@
         <ul class="m-drawer-nav">
           <li><a href="index.html"  data-page="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
           <li><a href="menu.html"   data-page="menu.html"><i class="fa-solid fa-mug-hot"></i> Menu</a></li>
+          <li><a href="branches.html" data-page="branches.html"><i class="fa-solid fa-store"></i> Chi nhánh</a></li>
           <li><a href="cart.html"   data-page="cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
           <li><a href="about.html"  data-page="about.html"><i class="fa-solid fa-award"></i> Về chúng tôi</a></li>
           <li><a href="contact.html" data-page="contact.html"><i class="fa-solid fa-paper-plane"></i> Liên hệ</a></li>
@@ -203,6 +204,7 @@
     nav.innerHTML = `
       <a href="index.html"  data-page="index.html"><i class="fa-solid fa-house"></i><span>Trang chủ</span></a>
       <a href="menu.html"   data-page="menu.html"><i class="fa-solid fa-mug-hot"></i><span>Menu</span></a>
+      <a href="branches.html" data-page="branches.html"><i class="fa-solid fa-store"></i><span>Chi nhánh</span></a>
       <a href="cart.html"   data-page="cart.html">${badgeHtml}<i class="fa-solid fa-cart-shopping"></i><span>Giỏ hàng</span></a>
       <a href="login.html"  data-page="login.html"><i class="fa-solid fa-user"></i><span>Tài khoản</span></a>
     `;
