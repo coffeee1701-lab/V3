@@ -18,6 +18,7 @@
       district: "Tân Phú",
       name: "GIBOR Lê Trọng Tấn",
       address: "140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, TP. Hồ Chí Minh",
+      image: "images/Branch/TPHCM1.JPG",
     },
     {
       id: "hcm2",
@@ -26,6 +27,7 @@
       district: "Quận 1",
       name: "GIBOR Nguyễn Huệ",
       address: "263 Nguyễn Huệ, Bến Nghé, Quận 1, TP. Hồ Chí Minh",
+      image: "images/Branch/TPHCM2.jpg",
     },
     {
       id: "hcm3",
@@ -34,6 +36,7 @@
       district: "Quận 3",
       name: "GIBOR Võ Văn Tần",
       address: "108 Võ Văn Tần, Phường 6, Quận 3, TP. Hồ Chí Minh",
+      image: "images/Branch/TPHCM3.jpg",
     },
     {
       id: "hcm4",
@@ -42,6 +45,7 @@
       district: "TP. Thủ Đức",
       name: "GIBOR Xa lộ Hà Nội",
       address: "77 Xa lộ Hà Nội, Thảo Điền, TP. Thủ Đức, TP. Hồ Chí Minh",
+      image: "images/Branch/TPHCM4.jpg",
     },
     {
       id: "hcm5",
@@ -50,6 +54,7 @@
       district: "Bình Thạnh",
       name: "GIBOR Điện Biên Phủ",
       address: "23 Điện Biên Phủ, Phường 15, Bình Thạnh, TP. Hồ Chí Minh",
+      image: "images/Branch/TPHCM5.JPG",
     },
     {
       id: "hn1",
@@ -58,6 +63,7 @@
       district: "Cầu Giấy",
       name: "GIBOR Trần Duy Hưng",
       address: "81 Trần Duy Hưng, Trung Hòa, Cầu Giấy, Hà Nội",
+      image: "images/Branch/HANOI1.jpg",
     },
     {
       id: "hn2",
@@ -66,6 +72,7 @@
       district: "Đống Đa",
       name: "GIBOR Láng Hạ",
       address: "66 Láng Hạ, Láng Hạ, Đống Đa, Hà Nội",
+      image: "images/Branch/HANOI2.jpg",
     },
     {
       id: "hn3",
@@ -74,6 +81,7 @@
       district: "Hai Bà Trưng",
       name: "GIBOR Bạch Mai",
       address: "115 Bạch Mai, Bạch Mai, Hai Bà Trưng, Hà Nội",
+      image: "images/Branch/HANOI3.jpg",
     },
     {
       id: "hn4",
@@ -82,6 +90,7 @@
       district: "Ba Đình",
       name: "GIBOR Hoàng Hoa Thám",
       address: "632 Hoàng Hoa Thám, Vĩnh Phúc, Ba Đình, Hà Nội",
+      image: "images/Branch/HANOI4.jpg",
     },
     {
       id: "hn5",
@@ -90,6 +99,7 @@
       district: "Long Biên",
       name: "GIBOR Nguyễn Văn Cừ",
       address: "334 Nguyễn Văn Cừ, Bồ Đề, Long Biên, Hà Nội",
+      image: "images/Branch/HANOI5.jpg",
     },
     {
       id: "dn1",
@@ -98,6 +108,7 @@
       district: "Ngũ Hành Sơn",
       name: "GIBOR Võ Nguyên Giáp",
       address: "567 Võ Nguyên Giáp, Mỹ An, Ngũ Hành Sơn, Đà Nẵng",
+      image: "images/Branch/DANANG1.jpg",
     },
     {
       id: "dn2",
@@ -106,6 +117,7 @@
       district: "Hải Châu",
       name: "GIBOR Bạch Đằng",
       address: "453 Bạch Đằng, Thạch Thang, Hải Châu, Đà Nẵng",
+      image: "images/Branch/DANANG2.jpg",
     },
     {
       id: "dn3",
@@ -114,6 +126,7 @@
       district: "Hải Châu",
       name: "GIBOR Nguyễn Văn Linh",
       address: "638 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng",
+      image: "images/Branch/DANANG3.jpg",
     },
     {
       id: "dn4",
@@ -122,6 +135,7 @@
       district: "Liên Chiểu",
       name: "GIBOR Tôn Đức Thắng",
       address: "53 Tôn Đức Thắng, Hòa Khánh Bắc, Liên Chiểu, Đà Nẵng",
+      image: "images/Branch/DANANG4.jpg",
     },
     {
       id: "dn5",
@@ -130,6 +144,7 @@
       district: "Cẩm Lệ",
       name: "GIBOR Cách Mạng Tháng Tám",
       address: "55 Cách Mạng Tháng Tám, Khuê Trung, Cẩm Lệ, Đà Nẵng",
+      image: "images/Branch/DANANG5.jpg",
     },
   ];
 
@@ -184,7 +199,7 @@
     return {
       ...branch,
       order: index + 1,
-      image: BRANCH_IMAGE_BY_CITY[branch.cityCode] || "images/logo/logo.jpg",
+      image: branch.image || BRANCH_IMAGE_BY_CITY[branch.cityCode] || "images/logo/logo.jpg",
       shortDescription: descriptions.shortDescription,
       fullDescription: descriptions.fullDescription,
       contactPhone: contact.phone || "",
